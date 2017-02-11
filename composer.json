@@ -1,0 +1,17 @@
+{
+    "name": "root/api_masters",
+    "require": {
+        "silex/silex": "^2.0"
+    },
+    "authors": [
+        {
+            "name": "flavianohonorato",
+            "email": "flaviano.honorato@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "ApiMaster\\" : "src/"
+      }
+    }
+}
