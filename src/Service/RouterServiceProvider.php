@@ -9,7 +9,8 @@ class RouterServiceProvider implements ServiceProviderInterface
 {
   public function register(Container $app)
   {
-    $app->get('/', 'home:index');
-    $app->get('/post/{slug}', 'home:show');
+    $app->get($app['api_version'] . '/beers', 'beers:index');
+    $app->get($app['api_version'] . '/beers/{id}', 'beers:getBeers');
+
   }
 }
