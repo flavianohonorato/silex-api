@@ -5,12 +5,12 @@ namespace ApiMaster\Model;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Beers
+ * Beer
  *
  * @ORM\Table(name="beers")
  * @ORM\Entity
  */
-class Beers
+class Beer
 {
     /**
      * @var integer
@@ -82,7 +82,7 @@ class Beers
      *
      * @return self
      */
-    private function setUpdatedAt(\DateTime $updatedAt)
+    public function setUpdatedAt(\DateTime $updatedAt)
     {
         $this->updatedAt = $updatedAt;
 
@@ -106,7 +106,7 @@ class Beers
      *
      * @return self
      */
-    private function setId($id)
+    public function setId($id)
     {
         $this->id = $id;
 
@@ -130,7 +130,7 @@ class Beers
      *
      * @return self
      */
-    private function setName($name)
+    public function setName($name)
     {
         $this->name = $name;
 
@@ -154,7 +154,7 @@ class Beers
      *
      * @return self
      */
-    private function setPrice($price)
+    public function setPrice($price)
     {
         $this->price = $price;
 
@@ -178,7 +178,7 @@ class Beers
      *
      * @return self
      */
-    private function setType($type)
+    public function setType($type)
     {
         $this->type = $type;
 
@@ -202,7 +202,7 @@ class Beers
      *
      * @return self
      */
-    private function setMark($mark)
+    public function setMark($mark)
     {
         $this->mark = $mark;
 
@@ -226,7 +226,7 @@ class Beers
      *
      * @return self
      */
-    private function setCreatedAt(\DateTime $createdAt)
+    public function setCreatedAt(\DateTime $createdAt)
     {
         $this->createdAt = $createdAt;
 
